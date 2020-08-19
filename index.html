@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="./images/masc_icon.png">
+    <title>MaSC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/w3.css">
+    <script src="https://kit.fontawesome.com/1d0cb03a1f.js"></script>
+    <script>
+      function readMore(buttonNumber) {
+          let dots = document.querySelector(`.button[data-button="${buttonNumber}"] .dots`);
+          let moreText = document.querySelector(`.button[data-button="${buttonNumber}"] .more`); 
+          let btnText = document.querySelector(`.button[data-button="${buttonNumber}"] .myBtn`);
+
+          if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.textContent = "Read more";
+              moreText.style.display = "none";
+          } else {
+              dots.style.display = "none";
+              btnText.textContent = "Read less"; 
+              moreText.style.display = "inline";
+           }
+      }
+  </script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="./index.html#home" class="w3-bar-item w3-button"><img src="images/masc_logo.png" alt="masc logo" style="width:45px;height:45px;"> Math and Science Club</a>
+    <div class="w3-right w3-hide-small">
+      <a href="./index.html#projects" class="w3-bar-item w3-button">Projects</a>
+      <a href="./index.html#about" class="w3-bar-item w3-button">About</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="./images/mascBackDrop.jpg" alt="masc background" width="1500" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Our Projects!</h3>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">3-D Printing</div>
+        <img src="images/3Dprinting.png" alt="Makerbot" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Arcade Machines</div>
+        <img src="images/arcadeMachines.jpg" alt="Arcade Machines" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Faceshields</div>
+        <img src="images/faceshields.jpg" alt="3D printed faceshields" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Visit to SpaceX</div>
+        <img src="images/fieldTrips.jpg" alt="SpaceX visit" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Drone</div>
+        <img src="images/finishedDrone.jpg" alt="Drone" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Game Programming</div>
+        <img src="images/games.png" alt="Coding Games" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Nasa Workshops</div>
+        <img src="images/nasaOpportunities.jpg" alt="Nasa presentation" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">CAD Design</div>
+        <img src="images/OrionAssembly.png" alt="Solidworks design" style="width:100%">
+      </div>
+    </div>
+  </div>
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Arduino Programming</div>
+        <img src="images/programming.png" alt="Arduino Programming" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">RC Car</div>
+        <img src="images/RCCar.jpg" alt="Remote Control Car" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Robotic Arm</div>
+        <img src="images/robotics.JPG" alt="Robotic Arm" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Soldering Workshops</div>
+        <img src="images/soldering.JPG" alt="Soldering" style="width:99%">
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>The Math and Science Club (MaSC) at Southwestern College is an interdisciplinary group of students with varying interest. MaSC members work on STEM-based projects that focus on learning to use the tools of the future.
+      Some of our recent workshops include Cyber Security, UX Design and Electrical Engineering. We want to provide a platfrom for curious and dedicated inviduals to explore their field of interest
+      and flourish as both a students and an independent thinkers.
+    </p>
+  </div>
+  
+  <!-- Leadership -->
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Leadership</h3>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="./images/juan.jpg" alt="Juan" style="width:100%">
+      <h3>Juan Leyva</h3>
+      <p class="w3-opacity">President</p>
+      <div class="button" data-button="button1">
+        <p>I am pursuing a degree in <span class="dots">...</span><span class="more" style="display: none;"> Electrical Engineering with a Computer Science minor at SDSU.</span></p>
+        <p><button class="w3-button w3-light-grey w3-block myBtn" onclick="readMore('button1')">Read More</button></p>
+      </div>
+          </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="./images/jessica.jpg" alt="Jessica" style="width:100%">
+      <h3>Jessica Mata</h3>
+      <p class="w3-opacity">Vice President  &amp; ICC Representative</p>
+      <div class="button" data-button="button2">
+        <p>I currently have an associate's degree in  <span class="dots">...</span><span class="more" style="display: none;"> Liberal Arts & Sciences and I’m pursuing a bachelor’s at UCSD in Cognitive Science with a specialization in Design & Interaction.</span></p>
+        <p><button class="w3-button w3-light-grey w3-block myBtn" onclick="readMore('button2')">Read More</button></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="./images/youssef.jpg" alt="Youssef" style="width:100%">
+      <h3>Youssef Francis</h3>
+      <p class="w3-opacity">Professor of Mathematics &amp; Advisor</p>
+      <div class="button" data-button="button3">
+        <p>The man, The myth, The legend. I am Bro<span class="dots">...</span><span class="more" style="display: none;">ssef.</span></p>
+        <p><button class="w3-button w3-light-grey w3-block myBtn" onclick="readMore('button3')">Read More</button></p>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="./images/raul.jpg" alt="Raul" style="width:100%">
+      <h3>Raul Soto</h3>
+      <p class="w3-opacity">Adjunct Instrunctor &amp; Advisor</p>
+      <div class="button" data-button="button4">
+        <p>Out of the darkness our hero emerges. Raul <span class="dots">...</span><span class="more" style="display: none;"> creater and destroyer.</span></p>
+        <p><button class="w3-button w3-light-grey w3-block myBtn" onclick="readMore('button4')">Read More</button></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Members Section -->
+  
+
+
+  
+
+<!-- Image of Masc at Club Fair -->
+<div class="w3-container">
+  <img src="./images/clubFair.jpg" class="w3-image" style="width:100%">
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>
+    <a href="https://www.instagram.com/masc_at_swccd/" target="_blank"><i class="fab fa-instagram fa-3x" title="Follow us on Instagram"></i></a>
+    <a href="https://www.facebook.com/groups/643883009112813/" target="_blank"><i class="fab fa-facebook fa-3x" style="margin-left: 25px; margin-right: 25px;" title="Join the FB group"></i></a> 
+    <a href="https://github.com/Leonelleyva123/masc-website" target="_blank"><i class="fab fa-github fa-3x" title="Checkout our projects on Github"></i></a>
+  </p>
+</footer>
+</body>
+</html>
